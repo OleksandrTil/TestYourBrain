@@ -3,7 +3,6 @@ package com.example.testyourbrain
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
@@ -12,7 +11,7 @@ import com.example.testyourbrain.db.ColumnName
 import com.example.testyourbrain.db.RecordDatabase
 import com.example.testyourbrain.db.Records
 import com.example.testyourbrain.db.RecordsDao
-import com.example.testyourbrain.utils.Constants
+import com.example.testyourbrain.utils.Сonstant
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
@@ -45,7 +44,7 @@ class ResultActivity : AppCompatActivity() {
     }
 
     private fun init() {
-        correctAnsw = intent.getIntExtra(Constants.KEY1, 0)
+        correctAnsw = intent.getIntExtra(Сonstant.KEY1, 0)
         textWin = resources.getString(R.string.win)
         tvFinish?.text = "$textWin $correctAnsw"
     }

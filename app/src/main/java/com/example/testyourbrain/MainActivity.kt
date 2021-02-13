@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
-import com.example.testyourbrain.utils.Constants
+import com.example.testyourbrain.utils.Сonstant
 import com.example.testyourbrain.utils.ListQuestions
 import com.example.testyourbrain.utils.Questions
 import kotlin.random.Random
@@ -59,8 +59,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
         if (counter == 10) {
             val intent = Intent(this, ResultActivity::class.java).apply {
-                putExtra(Constants.KEY1, correctAnsw)
-                putExtra(Constants.KEY2, incorrectAnsw)
+                putExtra(Сonstant.KEY1, correctAnsw)
+                putExtra(Сonstant.KEY2, incorrectAnsw)
             }
             startActivity(intent)
             finish()
