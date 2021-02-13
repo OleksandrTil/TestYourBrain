@@ -11,7 +11,7 @@ import com.example.testyourbrain.db.ColumnName
 import com.example.testyourbrain.db.RecordDatabase
 import com.example.testyourbrain.db.Records
 import com.example.testyourbrain.db.RecordsDao
-import com.example.testyourbrain.utils.Сonstant
+import com.example.testyourbrain.utils.Сonstants
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
@@ -44,7 +44,7 @@ class ResultActivity : AppCompatActivity() {
     }
 
     private fun init() {
-        correctAnsw = intent.getIntExtra(Сonstant.KEY1, 0)
+        correctAnsw = intent.getIntExtra(Сonstants.KEY1, 0)
         textWin = resources.getString(R.string.win)
         tvFinish?.text = "$textWin $correctAnsw"
     }
