@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TestYourBrain</string>
+    <string name="login_start">Начать!</string>
+    <string name="new_game">Заново!</string>
+    <string name="records">Рекорды</string>
+    <string name="win">Поздравляем! Правильных ответов: </string>
+    <string name="login_welcome">Добро пожаловать!</string>
+</resources>
